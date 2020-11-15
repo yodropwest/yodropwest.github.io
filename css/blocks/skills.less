@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.skills__flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5.74rem 8.04rem;
+    
+    @media @tablet {
+        display: block;
+        padding: 3.74rem 2rem;
+    }
+    
+    @media @notebook {
+        padding: 3.74rem 4.04rem;
+    }
+    
+    @media @mobile {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.skills__col {
+    flex-basis: 33.33333%;
+    
+    padding-bottom: 3rem;
+    
+    @media @notebook {
+        text-align: center;    
+    }
+}
+
+.skills__item {
+    display: flex;
+    margin: 0 3.82rem;
+    
+    @media @notebook {
+        display: block;
+    }
+    
+    @media @mobile-sm {
+        margin: 0 1rem;
+    }
+}
+
+.skills__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    margin-right: 4.45rem;
+    
+    @media @notebook {
+        padding-bottom: 1rem;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+}
+
+.skills__title {
+    font-size: 1.73rem;
+    color: @black;
+    padding-bottom: 1rem;
+}
+
+.skills__desc {
+    font-size: 1.06rem;
+    color: @gray;
+    line-height: 1.66rem;
+}

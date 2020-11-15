@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__inner-left {
+    display: block;
+    width: 50%;
+    
+    background: linear-gradient(to left, rgba(138, 11, 219, 0.43), rgba(69, 132, 203, 0.43), rgba(138, 11, 219, 0.43)), url("../images/about_bg.jpg");
+    
+    @media @tablet {
+        display: none;
+    }
+    
+}
+
+.about__inner-right {
+    width: 50%;
+    padding: 5.6rem 12.06rem 0 7.33rem;
+    
+    @media @tablet {
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    @media @notebook {
+        padding: 3.6rem 12.06rem 0 3.33rem;
+    }
+    
+    @media @mobile {
+        padding: 0;
+    }
+}
+
+.about__subtitle {
+    padding-left: 1rem;
+    padding-bottom: 1.86rem; 
+    
+    font-size: 1.33rem;
+    color: @gray;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle; 
+        width: 46px;
+	    height: 3px;
+	    background: linear-gradient(90deg, @green-btn, @purple); 
+        position: relative;
+
+        left: -15.5px;
+    }  
+}
+
+.about__title {
+    padding-bottom: 2.66rem;
+    
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.about__desc {
+    padding-bottom: 1.33rem;
+    
+    font-size: 1.06rem;
+    color: @gray;
+    line-height: 1.66rem;
+    
+    p {
+        padding-bottom: 2rem;
+    }
+}

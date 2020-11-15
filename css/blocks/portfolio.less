@@ -1,0 +1,31 @@
+// main: ../style.less
+
+.portfolio__inner {
+    text-align: center;
+}
+
+.portfolio__title {
+    padding-top: 5.2rem;
+    font-size: 2.8rem;
+}
+
+.portfolio__subtitle {
+    padding-top: 1.33rem;
+    padding-bottom: 3.93rem;
+        
+    font-size: 1,06rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle; 
+        width: 46px;
+	    height: 3px;
+	    background: linear-gradient(90deg, @green-btn, @purple); 
+        position: relative;
+
+        left: -15.5px;
+    }  
+}

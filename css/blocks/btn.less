@@ -1,0 +1,66 @@
+// main: ../style.less
+
+.btn__circle {
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    
+    border-radius: 31px;
+    
+    @media @mobile {
+        width: 200px;
+    }
+}
+
+.btn {
+    padding: 13px 59px;
+    
+    background: #e4e4e4;
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#000000, #000000), linear-gradient(-90deg, @purple, @green);  
+    
+    border: 10px solid transparent;
+    border-radius: 31px;
+       
+    font-size: 1rem;
+    color: @white;
+    text-decoration: none;
+    font-weight: 400;
+    
+    &:hover {
+        background-image: linear-gradient(#000000, #000000), linear-gradient(90deg, @purple, @green); 
+        transition: all .5s linear;
+    }
+    
+    @media @mobile {
+        padding: 8px 45px;
+    }
+}
+
+.btn__form {
+    padding: 1.1rem 3rem;
+    
+    color: @white;
+    font-size: 1.06rem;
+    background-color: @green;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); 
+	-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    
+    transition: transform .2s linear;
+    
+    &:focus {
+        outline: none;
+    }
+        
+    &:hover {
+        transform: translateY(-3px);
+    }    
+}

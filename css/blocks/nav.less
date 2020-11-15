@@ -1,0 +1,64 @@
+// main: ../style.less
+   
+.nav {
+    display: flex;
+    z-index: 2;
+    
+    @media @mobile {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        
+        position: absolute;
+        top: 15%;
+        right: 0;
+        z-index: 1000;
+        
+        background: @white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3); 
+        text-align: center;
+        
+        display: none;
+        
+        &.show {
+            display: block;
+        }
+        
+    }
+}
+
+.nav__link {
+    padding-left: 2rem;
+    
+    font-size: 1.26rem;
+    font-weight: 400;
+    color: @white;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+    
+    @media @mobile {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: .5rem 1rem;
+        
+        color: @black;
+    }
+    
+    &--footer {
+        font-size: 1.33rem;
+        
+        @media @mobile {
+            display: inline;
+            font-size: 1rem;
+            padding: 0;
+            margin: 1rem;
+            color: white;
+        }
+    }
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

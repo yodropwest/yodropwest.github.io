@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.social {
+    display: block;
+    padding-top: 4rem;
+    
+    text-align: center;
+    align-items: center;
+    
+    a {
+        margin-right: 1.33rem;
+        padding: 1.5rem;
+        max-height: 14.5px;
+        
+        text-decoration: none;
+        background-color: @white;
+        border-radius: 50%;
+        
+        @media @tablet {
+            padding: 1rem;
+        }
+        
+        @media @mobile {
+            margin-right: .5rem;
+        }
+    }
+    
+    @media @tablet {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.social__link {
+    
+    transition:  box-shadow .2s linear;
+    
+    &:hover {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5); 
+        -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5); 
+        -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);  
+     }
+}

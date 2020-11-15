@@ -1,0 +1,83 @@
+// main: ../style.less
+
+.reviews__bg {
+    margin-top: 2rem;
+    padding: 6rem 0;
+    
+    background: linear-gradient(to right, rgba(11,219,163,0.8) 0%, rgba(225,59,255,0.8) 100%), url("../images/reviews.png") center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+    @media @mobile {
+        padding: 3rem 0;
+    }
+}
+
+.reviews__item {
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    
+    @media @tablet {
+        max-width: 400px;
+    }
+    
+    @media @mobile {
+        max-width: 300px;
+    }
+    
+    @media @mobile {
+        max-width: 250px;
+    }
+}
+
+.reviews__item-flex {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__author-block {
+    display: block;
+    padding-left: 1.4rem;
+}
+
+.reviews__text {
+    padding-top: 1.66rem;
+    
+    font-size: 1.33rem;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    color: @white;
+        
+    @media @mobile-sm {
+        font-size: 1rem;
+    }
+}
+
+.reviews__photo {
+    display: block;
+    width: 96px;
+    height: 96px;
+    
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    
+        
+    @media @mobile-sm {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.reviews__name {
+    font-size: 1.33rem;
+    font-family: 'Open Sans', sans-serif;
+    color: @white;   
+}
+
+.reviews__company {
+    font-size: 1.06rem;
+    font-family: 'Open Sans', sans-serif;
+    color: @white;
+}

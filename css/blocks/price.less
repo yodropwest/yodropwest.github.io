@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.price {
+    padding: 6rem 12.4rem; 
+    
+    @media @notebook {
+        padding: 2rem; 
+    }
+    
+    @media @tablet {
+        padding: 1rem; 
+    }
+}
+
+.price__package {
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media @mobile {
+        display: block;
+    }
+}
+
+.price__col {
+    flex-basis: 33.33333%;
+    width: 100%;
+    height: 100%;
+    max-width: 496px;
+    margin: 0 auto;
+    
+    border: 4px solid @purple;
+    
+    &:hover {
+        background: linear-gradient(rgba(11,219,163,1) 0%, rgba(138,11,219,1) 100%);
+        border: linear-gradient(rgba(11,219,163,1) 0%, rgba(138,11,219,1) 100%);
+        transition: .2s linear;
+    }
+    
+    &:hover li {
+        color: @white;
+        transition: .2s linear;
+    }
+    
+    &:hover .package__title {
+        color: @white;
+        transition: .2s linear;
+    }
+    
+    &:hover .package__money {
+        color: @white;
+        transition: .2s linear;
+    }
+    
+    &:hover .package__year {
+        color: @white;
+        transition: .2s linear;
+    }
+    
+    &:hover .btn {
+        color: @black;
+        background-image: none;
+        background: @white;
+        transition: .2s linear;
+    }
+    
+    @media @mobile {
+        margin-bottom: 0.5rem;
+    }
+}
